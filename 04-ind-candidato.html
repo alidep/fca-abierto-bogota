@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bogotá</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coustard:400,900&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  </head>
+  <body>
+<div class="toppartoverall">
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="imgs/bogota-logo.png" alt="" >
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+        
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+             <a class="navbar-item" href="index.html">
+        Home
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        Home
+      </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+ 
+
+  <section class="section topheader">
+    <div class="container">
+
+
+<div class="columns inner-header level is-centered">
+  <div class="column is-one-quarter"><img src="imgs/candidate1.png"></div>
+  <div class="column"><h4>Carlos Fernando Galán</h4><h5>Bogotá para la Gente</h5><i class="fab fa-facebook-square fa-lg fa-fw"></i><i class="fab fa-twitter fa-lg fa-fw"></i><i class="fab fa-instagram fa-lg fa-fw"></i></div>
+</div>
+    </div>
+  </section>
+
+  <section class="section middle-part">
+    <div class="container">
+Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor  Nulla vitae elit libero, a pharetra augue.  Nulla vitae elit libero, a pharetra augue.  posuere velit aliquet. Curabitur blandit tempus porttitor  Nulla vitae elit libero, a pharetra augue.  Nulla vitae elit libero, a pharetra augue. posuere velit aliquet. Curabitur blandit tempus porttitor  Nulla vitae elit libero, a pharetra augue.  Nulla vitae elit libero, a pharetra augue.
+
+
+<h4>Pricipales interes</h4>
+
+<div class="tags are-medium">
+<span class="tag is-blue">Corrupción</span><span class="tag is-red"><a href="05-tema-candidato.html">Medio Ambiente</a></span><span class="tag is-yellow">Genero</span>
+</div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+<section class="card">
+  <div class="card--content"><img src="imgs/seguridad.png"></div>
+  <div class="card--content"><img src="imgs/movilidad.png"></div>
+  <div class="card--content"><img src="imgs/corrup.png"></div>
+  <div class="card--content"><img src="imgs/medioabient.png"></div>
+  <div class="card--content"><img src="imgs/empleo.png"></div>
+  <div class="card--content"><img src="imgs/genero.png"></div>
+  <div class="card--content"><img src="imgs/salud.png"></div>
+  <div class="card--content"><img src="imgs/educacion.png"></div>
+  <div class="card--content"><img src="imgs/cultura.png"></div>
+  <div class="card--content"><img src="imgs/gestion.png"></div>
+</section>
+
+  <section class="section middle-part">
+    <div class="container">
+  <h4>Con el apoyo de </h4>
+  <div class="columns is-variable is-1">  <div class="column">
+
+<div class="columns is-variable is-1 is-mobile">
+  <div class="column"><img src="imgs/kurula.png"></div>
+  <div class="column"><img src="imgs/kurula.png"></div>
+    <div class="column"><img src="imgs/kurula.png"></div>
+</div>
+</div>
+<div class="column">
+<div class="columns is-variable is-1 is-mobile">
+  <div class="column"><img src="imgs/kurula.png"></div>
+  <div class="column"><img src="imgs/kurula.png"></div>
+    <div class="column"><img src="imgs/kurula.png"></div>
+</div>
+
+
+  </div></div>
+
+    </div>
+  </section>
+
+<section class="section bottom-btns has-text-centered">
+    <div class="container">
+      <a class="button is-rounded is-large circle is-red" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="button is-rounded is-large is-yellow">Siguiente</a><a class="button is-rounded is-large circle" id="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+<script type="text/javascript">
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+ 
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+
+function goBack() {
+  window.history.back();
+}
+  </script> 
+  </body>

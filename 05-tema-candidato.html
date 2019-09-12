@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bogotá</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coustard:400,900&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  </head>
+  <body>
+<div class="toppartoverall">
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="imgs/bogota-logo.png" alt="" >
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+        
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+             <a class="navbar-item" href="index.html">
+        Home
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        Home
+      </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <section class="section topheader">
+    <div class="container inner-header2 level">
+<div class="columns is-mobile is-vcentered">
+  <div class="column level-item"><img src="imgs/candidate1.png"><br><p style="text-align: center;"><strong>CARLOS FERNANDO GALÁN</strong>
+</p></div>
+  <div class="column level-item"><img src="imgs/line.png" style="vertical-align: middle;"></div>
+    <div class="column level-item"><img src="imgs/medio-ambiente-circle.png"><br><p style="text-align: center;"><strong>MEDIO AMBIENTE</strong>
+</p></div>
+</div>
+
+    </div>
+  </section>
+
+  <section class="section middle-part">
+    <div class="container">
+
+<div class="columns is-mobile divided">
+  <div class="column"><h6>PLATFORM</h6></div>
+  <div class="column"><img src="imgs/dots.png" style="float:right;"></div>
+</div>
+</div>
+
+
+<div class="columns is-mobile divided">
+  <div class="column is-one-quarter"><span class="marks">"</span></div>
+  <div class="column"><p>Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. </span></p><h6 onclick="verMAS()" id="myBtn">VER MAS</h6></div>
+</div>
+
+
+
+<div class="columns is-mobile divided">
+  <div class="column"><h6>DEBATE 1</h6></div>
+  <div class="column"><img src="imgs/dots2.png" style="float:right;"></div>
+</div>
+
+
+<div class="columns is-mobile">
+  <div class="column is-one-quarter"><span class="marks">"</span></div>
+  <div class="column"><p>Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. <span id="dots">...</span><span id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. </span></p><h6 onclick="verMAS2()" id="myBtn2">VER MAS</h6></div>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="section bottom-btns has-text-centered">
+    <div class="container">
+      <a class="button is-rounded is-large circle is-red" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="button is-rounded is-large is-yellow">Siguiente</a><a class="button is-rounded is-large circle" id="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+   <script type="text/javascript">
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+ 
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+
+
+function verMAS() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "VER MAS"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "VER MENOS"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function verMAS2() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "VER MAS"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "VER MENOS"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function goBack() {
+  window.history.back();
+}
+  </script> 
+  </body>
+</html>

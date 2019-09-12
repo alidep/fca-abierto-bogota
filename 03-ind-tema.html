@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bogotá</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coustard:400,900&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  </head>
+  <body>
+<div class="toppartoverall">
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="imgs/bogota-logo.png" alt="" >
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+        
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+             <a class="navbar-item" href="index.html">
+        Home
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        Home
+      </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="section topheader has-text-centered">
+    <div class="container">
+
+
+<div class="columns inner-header level is-centered">
+  <div class="column is-one-quarter"><img src="imgs/medio-ambiente-circle.png"></div>
+  <div class="column"><h4>Media Ambiente</h4></div>
+</div>
+    </div>
+  </section>
+ <section class="section middle-part">
+    <div class="container">
+
+<div class="columns">  <div class="column">
+
+<div class="columns is-mobile is-centered quotes">
+   <div class="column is-vertical-center speech-bubble"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p></div>
+  <div class="column is-one-quarter quote-person"><a href="05-tema-candidato.html"><img src="imgs/candidate1.png"><p style="text-align: center;"><strong>CARLOS FERNANDO GALÁN</strong>
+</p></a></div>
+ 
+</div>
+</div>
+<div class="column">
+<div class="columns is-mobile is-centered quotes">
+ 
+  
+   <div class="column is-one-quarter quote-person is-vertical-center"><a href="05-tema-candidato.html"><img src="imgs/candidate1.png"><p style="text-align: center;"><strong>CLAUDIA LÓPEZ</strong>
+</p></a></div>
+   <div class="column is-vertical-center speech-bubble2"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p></div>
+</div>
+
+  </div></div>
+
+<div class="columns">  <div class="column">
+
+<div class="columns is-mobile is-centered quotes">
+   <div class="column is-vertical-center speech-bubble3"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p></div>
+  <div class="column is-one-quarter quote-person"><a href="05-tema-candidato.html"><img src="imgs/candidate1.png"><p style="text-align: center;"><strong>MIGUEL URIBE</strong>
+</p></a></div>
+ 
+</div>
+</div>
+<div class="column">
+<div class="columns is-mobile is-centered quotes">
+ 
+  
+   <div class="column is-one-quarter quote-person"><a href="05-tema-candidato.html"><img src="imgs/candidate1.png"><p style="text-align: center;"><strong>HOLLMAN MORRIS</strong>
+</p></a></div>
+   <div class="column is-vertical-center speech-bubble4"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p></div>
+</div>
+
+  </div></div>
+
+    </div>
+  </section>
+
+
+<section class="section bottom-btns has-text-centered">
+    <div class="container">
+      <a class="button is-rounded is-large circle is-red" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="button is-rounded is-large is-yellow">Siguiente</a><a class="button is-rounded is-large circle" id="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+   <script type="text/javascript">
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+ 
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+
+function goBack() {
+  window.history.back();
+}
+  </script> 
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bogotá</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coustard:400,900&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  </head>
+  <body>
+<div class="toppartoverall">
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="imgs/bogota-logo.png" alt="" >
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+        
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+             <a class="navbar-item" href="index.html">
+        Home
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        Home
+      </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="section topheader has-text-centered">
+    <div class="container">
+      <a class="button is-rounded is-medium is-red" href="01-tema.html">POR TEMA</a><a class="button is-rounded is-medium is-yellow" href="02-candidato.html">POR CANDIDATO</a>
+    </div>
+  </section>
+
+</div>
+ <section class="section middle-part">
+    <div class="container">
+
+<div class="columns">  <div class="column">
+
+<div class="columns is-mobile">
+  <div class="column"><a href="03-ind-tema.html"><img src="imgs/seguridad.png"></a></div>
+  <div class="column"><a href="03-ind-tema.html"><img src="imgs/movilidad.png"></a></div>
+</div>
+</div>
+<div class="column">
+<div class="columns is-mobile">
+  <div class="column"><a href="03-ind-tema.html"><img src="imgs/corrup.png"></a></div>
+  <div class="column"><a href="03-ind-tema.html"><img src="imgs/medioabient.png"></a></div>
+</div>
+
+  </div></div>
+  <div class="columns">  <div class="column">
+
+<div class="columns is-mobile">
+  <div class="column"><img src="imgs/empleo.png"></div>
+  <div class="column"><img src="imgs/genero.png"></div>
+</div>
+</div>
+<div class="column">
+<div class="columns is-mobile">
+  <div class="column"><img src="imgs/salud.png"></div>
+  <div class="column"><img src="imgs/educacion.png"></div>
+</div>
+
+  </div></div>
+  <div class="columns">  <div class="column">
+
+<div class="columns is-mobile">
+  <div class="column"><img src="imgs/cultura.png"></div>
+  <div class="column"><img src="imgs/gestion.png"></div>
+</div>
+</div>
+<div class="column">
+<div class="columns is-mobile">
+  <div class="column"><img src="imgs/empleo.png"></div>
+  <div class="column"><img src="imgs/genero.png"></div>
+</div>
+
+  </div></div>
+
+</div>
+</section>
+
+<section class="section bottom-btns has-text-centered">
+    <div class="container">
+      <a class="button is-rounded is-large circle is-red" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="button is-rounded is-large is-yellow">Siguiente</a><a class="button is-rounded is-large circle" id="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+   <script type="text/javascript">
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+ 
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+
+
+
+function goBack() {
+  window.history.back();
+}
+  </script> 
+  </body>
+</html>
