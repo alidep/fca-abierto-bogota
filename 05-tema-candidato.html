@@ -56,10 +56,10 @@
   <section class="section topheader">
     <div class="container inner-header2 level">
 <div class="columns is-mobile is-vcentered">
-  <div class="column level-item"><img src="imgs/candidate1.png"><br><p style="text-align: center;"><strong>CARLOS FERNANDO GALÁN</strong>
+  <div class="column level-item"><img src="imgs/carlos.png"><br><br><p style="text-align: center;"><strong>CARLOS FERNANDO GALÁN</strong>
 </p></div>
   <div class="column level-item"><img src="imgs/line.png" style="vertical-align: middle;"></div>
-    <div class="column level-item"><img src="imgs/medio-ambiente-circle.png"><br><p style="text-align: center;"><strong>MEDIO AMBIENTE</strong>
+    <div class="column level-item"><div class="cirle green-box has-text-centered"><img src="imgs/icons/4.png"></div><br><br><p style="text-align: center;"><strong>MEDIO AMBIENTE</strong>
 </p></div>
 </div>
 
@@ -69,11 +69,16 @@
   <section class="section middle-part">
     <div class="container">
 
-<div class="columns is-mobile divided">
-  <div class="column"><h6>PLATFORM</h6></div>
-  <div class="column"><img src="imgs/dots.png" style="float:right;"></div>
-</div>
-</div>
+<nav class="level">
+  <div class"level-left"><h6 class="level-item">PLATFORM</h6></div>
+   <div class"level-right"><div class="columns is-mobile level-item">
+                        <div class="column"><i class="fas fa-times fa-2x green-x"></i></div>
+                        <div class="column"><i class="fas fa-circle"></i></div>
+                        <div class="column"><i class="fas fa-circle"></i></div>
+                        <div class="column"><i class="fas fa-circle"></i></div>
+                        <div class="column"><i class="fas fa-circle"></i></div>
+                      </div></div>
+</nav>
 
 
 <div class="columns is-mobile divided">
@@ -82,11 +87,18 @@
 </div>
 
 
+<nav class="level">
+  <div class"level-left"><h6 class="level-item">DEBATE 1</h6></div>
+   <div class"level-right"><div class="columns is-mobile level-item">
+                        <div class="column"><i class="fas fa-times fa-2x green-x"></i></div>
+                        <div class="column"><i class="fas fa-times fa-2x yellow-x"></i></div>
+                        <div class="column"><i class="fas fa-circle"></i></div>
+                        <div class="column"><i class="fas fa-circle"></i></div>
+                        <div class="column"><i class="fas fa-circle"></i></div>
+                      </div></div>
+</nav>
 
-<div class="columns is-mobile divided">
-  <div class="column"><h6>DEBATE 1</h6></div>
-  <div class="column"><img src="imgs/dots2.png" style="float:right;"></div>
-</div>
+
 
 
 <div class="columns is-mobile">
@@ -95,16 +107,43 @@
 </div>
 </div>
 </section>
+ 
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content has-text-centered">
 
+<div class="box">
 
+      <div class="content">
+<h2>Compartir en</h2>
+      </div>
+<nav class="level is-mobile">
 
+          <a class="level-item" aria-label="reply">
+            <i class="fab fa-facebook-square fa-3x"></i>
+          </a>
+          <a class="level-item" aria-label="retweet">
+<i class="fab fa-twitter-square fa-3x"></i>
+          </a>
+          <a class="level-item" aria-label="like">
+<i class="fab fa-instagram fa-3x"></i>
+          </a>
+</nav>
+    </div>
+  </article>
+</div>
+  <button class="modal-close is-large" aria-label="close"></button>
 
+  </div>
+
+</div>
 
 <section class="section bottom-btns has-text-centered">
     <div class="container">
-      <a class="button is-rounded is-large circle is-red" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="button is-rounded is-large is-yellow">Siguiente</a><a class="button is-rounded is-large circle" id="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+      <a class="button is-rounded is-large circle is-red" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="button is-rounded is-large is-yellow">Siguiente</a><a class="button is-rounded is-large circle showModal" id="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
     </div>
   </section>
+
 
    <script type="text/javascript">
 (function() {
@@ -153,6 +192,27 @@ function verMAS2() {
 function goBack() {
   window.history.back();
 }
+
+
+(function() {
+  var modalSelect= document.querySelector('#share');
+  var modalItself= document.querySelector('.modal');
+   var modalClose= document.querySelector('.modal-close');
+
+   
+  modalSelect.addEventListener('click', function(){
+     modalItself.classList.add("is-active"); 
+
+   });
+
+  modalClose.addEventListener('click', function(){
+     modalItself.classList.remove("is-active");
+    
+  });
+
+
+})();
+
   </script> 
   </body>
 </html>
