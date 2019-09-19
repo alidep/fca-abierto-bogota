@@ -328,6 +328,11 @@ color:#fff;
 
 }
 
+.tag:not(body).is-teal{
+	background-color: #15E4B3;
+
+}
+
 .tag:not(body){
 	border-radius: 30px;
 	font-family: 'Montserrat', sans-serif;
@@ -351,6 +356,109 @@ color:#fff;
 }
 
 
+
+.tema-box{
+	width:225px;
+	height: 190px;
+}
+
+.blue-box
+
+{
+
+	background-color: #284EFF;
+}
+
+.lightblue-box
+
+{
+
+	background-color: #13E4F6;
+}
+
+.purple-box
+
+{
+
+	background-color: #D336CF;
+}
+
+.green-box
+
+{
+
+	background-color: #A9E50A;
+}
+
+.orange-box
+
+{
+
+	background-color: #FF8A0B;
+}
+
+.teal-box
+
+{
+
+	background-color: #15E4B3;
+}
+
+
+.tema-box h4{
+font-size: 18px;
+text-align: center;
+color: #ffffff;
+margin: 15px;
+}
+
+.tema-box h5{
+font-size: 16px;
+text-align: center;
+color: #ffffff;
+margin: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
+.tema-box img
+{
+
+	max-width: 25%;
+	margin-top:30px;
+	
+	max-height: 30%;
+
+	
+}
+.cirle{
+border-radius: 50%;
+width: 100px;
+display: inline-block;
+}
+
+.cirle img{
+	width: 50%;
+	margin: 25px;
+}
+
+.fa-circle{
+
+color: #EAEAEA;
+}
+
+.red-x{
+color: #EA4377;
+}
+
+.green-x{
+color: #14DF85;
+}
+.yellow-x{
+color:#FFCA28;
+
 @media only screen and (max-width: 768px) {
 .middle-part{
 width: 100%;
@@ -358,6 +466,20 @@ margin-right: auto;
 margin-left:auto;
 
 }
+
+.tema-box{
+	width:175px;
+	height: 175px;
+}
+
+.tema-box h4{font-size: 16px;}
+.tema-box h5{font-size: 12px;}
+
+}
+
+.share-box{
+	background-color: #ffffff;
+	height: 300px;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -367,4 +489,13 @@ margin-right: auto;
 margin-left:auto;
 
 }
+
+.tema-box{
+	width:175px;
+	height: 175px;
+}
+
+.tema-box h4{font-size: 16px;}
+.tema-box h5{font-size: 12px;}
+
 }
