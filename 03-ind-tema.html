@@ -70,7 +70,7 @@
 <div class="columns">  <div class="column">
 
 <div class="columns is-mobile is-centered quotes">
-   <div class="column is-vertical-center speech-bubble"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p></div>
+   <div class="column is-vertical-center speech-bubble"><p>um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatib </p><h6 onclick="verMAS()" id="myBtn3">VER MAS</h6><div class="btnslike"> <a class="button is-small is-rounded"   > 30&nbsp;&nbsp;<i class="fas fa-thumbs-down" style="color:red;"></i> <a class="button is-small is-rounded"> 6&nbsp;&nbsp;<i class="fas fa-thumbs-up" style="color:#14DF85;"></i></a></div></div>
   <div class="column is-one-quarter quote-person"><a href="05-tema-candidato.html"><img src="imgs/carlos.png"><p style="text-align: center;"><strong>CARLOS FERNANDO GALÁN</strong>
 </p></a></div>
  
@@ -82,7 +82,7 @@
   
    <div class="column is-one-quarter quote-person is-vertical-center"><a href="05-tema-candidato.html"><img src="imgs/claudia.png"><p style="text-align: center;"><strong>CLAUDIA LÓPEZ</strong>
 </p></a></div>
-   <div class="column is-vertical-center speech-bubble2"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p></div>
+   <div class="column is-vertical-center speech-bubble2"><p>m sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatib  </p><h6 onclick="verMAS()" id="myBtn3">VER MAS</h6><div class="btnslike"> <a class="button is-small is-rounded"   > 30&nbsp;&nbsp;<i class="fas fa-thumbs-down" style="color:red;"></i> <a class="button is-small is-rounded"> 6&nbsp;&nbsp;<i class="fas fa-thumbs-up" style="color:#14DF85;"></i></a></div></div>
 </div>
 
   </div></div>
@@ -90,7 +90,7 @@
 <div class="columns">  <div class="column">
 
 <div class="columns is-mobile is-centered quotes">
-   <div class="column is-vertical-center speech-bubble3"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p></div>
+   <div class="column is-vertical-center speech-bubble3"><p>m sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatib</p> <h6 onclick="verMAS()" id="myBtn3">VER MAS</h6> <div class="btnslike"> <a class="button is-small is-rounded"   > 30&nbsp;&nbsp;<i class="fas fa-thumbs-down" style="color:red;"></i> <a class="button is-small is-rounded"> 6&nbsp;&nbsp;<i class="fas fa-thumbs-up" style="color:#14DF85;"></i></a></div></div>
   <div class="column is-one-quarter quote-person"><a href="05-tema-candidato.html"><img src="imgs/miguel.png"><p style="text-align: center;"><strong>MIGUEL URIBE</strong>
 </p></a></div>
  
@@ -102,7 +102,7 @@
   
    <div class="column is-one-quarter quote-person"><a href="05-tema-candidato.html"><img src="imgs/morris.png"><p style="text-align: center;"><strong>HOLLMAN MORRIS</strong>
 </p></a></div>
-   <div class="column is-vertical-center speech-bubble4"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. </p></div>
+   <div class="column is-vertical-center speech-bubble4"><p>m sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.um sociis natoque penatib  </p><h6 onclick="verMAS()" id="myBtn3">VER MAS</h6> <div class="btnslike"> <a class="button is-small is-rounded"   > 30&nbsp;&nbsp;<i class="fas fa-thumbs-down" style="color:red;"></i> <a class="button is-small is-rounded"> 6&nbsp;&nbsp;<i class="fas fa-thumbs-up" style="color:#14DF85;"></i></a></div></div>
 </div>
 
   </div></div>
@@ -127,6 +127,25 @@
     nav.classList.toggle('is-active');
   });
 })();
+
+
+function verMAS() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "VER MAS"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "VER MENOS"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
 
 function goBack() {
   window.history.back();
