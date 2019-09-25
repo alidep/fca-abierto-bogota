@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bogotá</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coustard:400,900&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  </head>
+  <body>
+<div class="toppartoverall">
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="imgs/bogota-logo.png" alt="" >
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+        
+      </a>
+        
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+             <a class="navbar-item" href="index.html">
+        <a class="button is-small is-rounded is-red">Alcaldes</a>
+      </a>
+      <div class="navbar-item">
+      <a class="navbar-item" href="index.html">
+       <a class="button is-small is-rounded is-yellow">Curcules</a>
+      </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <section class="section topheader">
+    <div class="container inner-header2 level">
+<div class="columns is-mobile is-vcentered">
+  <div class="column level-item"><img src="imgs/carlos.png"><br><br><p style="text-align: center;"><strong>CARLOS FERNANDO GALÁN</strong>
+</p></div>
+  <div class="column level-item"><img src="imgs/line.png" style="vertical-align: middle;"></div>
+    <div class="column level-item"><div class="cirle green-box has-text-centered"><img src="imgs/icons/4.png"></div><br><br><p style="text-align: center;"><strong>MEDIO AMBIENTE</strong>
+</p></div>
+</div>
+
+    </div>
+  </section>
+
+  <section class="section middle-part">
+    <div class="container">
+<div class="tabs is-centered">
+  <ul>
+    <li class="is-active"><a>Plataforma</a></li>
+    <li><a>Debate 1</a></li>
+    <li><a>Debate 2</a></li>
+    <li><a>Debate 3</a></li>
+  </ul>
+</div>
+  <div class="container">
+Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum.
+
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Donec sed odio dui.
+
+Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+</div>
+</section>
+ 
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content has-text-centered">
+
+<div class="box">
+
+      <div class="content">
+<h2>Compartir en</h2>
+      </div>
+<nav class="level is-mobile" style="margin-right:25%;margin-left:25%;">
+
+          <a class="level-item" aria-label="reply">
+            <i class="fab fa-facebook-square fa-3x" style="color:#4267B1;"></i>
+          </a>
+          <a class="level-item" aria-label="retweet">
+<i class="fab fa-twitter-square fa-3x" style="color:#34A1F2;"></i>
+          </a>
+          <a class="level-item" aria-label="like">
+<i class="fab fa-instagram fa-3x" style="color:#FB4B64;"></i>
+          </a>
+</nav>
+    </div>
+  </article>
+</div>
+  <button class="modal-close is-large" aria-label="close"></button>
+
+  </div>
+
+</div>
+
+<section class="section bottom-btns has-text-centered">
+    <div class="container">
+      <a class="button is-rounded is-large circle is-red" onclick="goBack()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="button is-rounded is-large is-yellow">Siguiente</a><a class="button is-rounded is-large circle showModal" id="share"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+
+   <script type="text/javascript">
+(function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+ 
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+
+
+function verMAS() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "VER MAS"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "VER MENOS"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function verMAS2() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "VER MAS"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "VER MENOS"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function goBack() {
+  window.history.back();
+}
+
+
+(function() {
+  var modalSelect= document.querySelector('#share');
+  var modalItself= document.querySelector('.modal');
+   var modalClose= document.querySelector('.modal-close');
+
+   
+  modalSelect.addEventListener('click', function(){
+     modalItself.classList.add("is-active"); 
+
+   });
+
+  modalClose.addEventListener('click', function(){
+     modalItself.classList.remove("is-active");
+    
+  });
+
+
+})();
+
+  </script> 
+  </body>
+</html>
